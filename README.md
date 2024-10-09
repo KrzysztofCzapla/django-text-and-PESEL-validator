@@ -1,6 +1,6 @@
 # django text shuffle
 
-# Installation
+# Configuration & Installation
 
 ## 1) Add .env to config folder
 ### example: 
