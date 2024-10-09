@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Modifier</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5 text-center justify-content-center">
+        <h1 class="text-center">Send your Text File for a little Shake</h1>
+        <form method="POST" enctype="multipart/form-data" class="container mt-5 text-center justify-content-center w-50">
+            {% csrf_token %}
+            <div class="form-group">
+                {{ form.file.label }}
+                {{ form.file }}
+            </div>
+            <button type="submit" class="btn btn-primary">Upload</button>
+        </form>
+    </div>
+</body>
+</html>

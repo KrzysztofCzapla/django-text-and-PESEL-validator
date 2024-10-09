@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5 text-center justify-content-center">
+        <h1 class="text-center">Modified text file:</h1>
+        <div class="mt-4">
+            <p class="lead">{{ modified_text }}</p>
+            <a href="{% url 'text-view' %}" class="btn btn-secondary">Back</a>
+        </div>
+    </div>
+</body>
+</html>
